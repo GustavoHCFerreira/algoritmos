@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conceitos Básicos</title> 
+</head>
+<body>
+    <header>
+        <h1>Algoritmos com Portugol Studio</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="conceitos-basicos.html">Conceitos Básicos</a>
+        <a href="#">Estruturas de Decisão</a>
+        <a href="#">Estruturas de Repetição</a>
+        <a href="#">Vetores e Matrizes</a>
+        <a href="#">Procedimentos e Funções</a>
+    </nav>
+    <main>
+        <h2>Definição e Conceitos Básicos</h2>
+        <p>Um <strong>algoritmo</strong> pode ser definido como uma sequência bem ordenada e sem ambiguidade de passos que quando executados levam à solução de um determinado problema.</p>
+        <p>O conceito de algoritmo apareceu com mais evidência na era da tecnologia da informação, sendo portanto um conceito relativamento novo. No entanto a ideia de algoritmo é bastante familiar. São exemplos comuns de algoritmos:</p>
+        <aside>
+            <ul>
+                <li>As indicações para se chegar a algum lugar</li>
+                <li>Uma receita de cozinha</li>
+                <li>A planta de uma casa</li>
+                <li>Um mapa</li>
+                <li>As instruções de montagens de brinquedos ou móveis</li>
+            </ul>
+        </aside>
+        <p>Vamos ilustrar o conceito de algoritmo utilizando um exemplo bem simples: substituição de uma lâmpada queimada.</p>
+        <aside>
+            <ol>
+                <li>Remova a lâmpada queimada</li>
+                <li>Coloque a nova lâmpada no lugar</li>
+            </ol>
+        </aside>
+        <p>O procedimento acima parece resolver o problema, porém não está devidamente detalhado. Pensemos em cada uma das etapas acima: o que é necessário para tirar a lâmpada? Será que vamos precisar de uma escada? Após colocar a escada como giramos a lâmpada para tirá-la: sentido horário ou anti-horário? Pensando nisso, vamos detalhar o passo acima assim:</p>
+        <aside>
+            <ul>
+                <li>Posicione a escada embaixo da lâmpada queimada</li>
+                <li>Suba a escada até que se possa alcançar a lâmpada</li>
+                <li>Gire a lâmpada no sentido anti-horário até que ela se solte</li>
+            </ul>
+        </aside>
+        <p>Pensando no segundo passo: devemos selecionar uma lâmpada com a mesma potência da queimada; além disso, devemos posicionar a lâmpada no bocal e girá-la no sentido horário até que ela fique firme; finalmente, podemos descer da escada. Observe que a lâmpada de mesma potência deve ser escolhida antes de subir a escada.</p>
+        <aside>
+            <ul>
+                <li>Escolha uma nova lâmpada de mesma potência da queimada</li>
+                <li>Posicione a nova lâmpada no bocal</li>
+                <li>Gire a lâmpada no sentido horário até que ela fique firme</li>
+                <li>Desça a escada</li>
+            </ul>
+        </aside>
+        <p>Podemos reescrever o algoritmo em 7 passos:</p>
+        <aside>
+            <ol>
+                <li>Posicione a escada debaixo da lâmpada queimada</li>
+                <li>Escolha uma nova lâmpada de mesma potência da queimada</li>
+                <li>Suba a escada até que a lâmpada possa ser alcançada</li>
+                <li>Gire a lâmpada queimada no sentido anti-horário até que ela se solte</li>
+                <li>Posiione a nova lâmpada no bocal</li>
+                <li>Gire a lâmpada no sentido horário até que ela fique firme</li>
+                <li>Desça a escada</li>
+            </ol>
+        </aside>
+        <p>Podemos detalhar algumas operações ainda mais. Por exemplo, observe a instrução 2. Podemos reescrevê-la assim:</p>
+        <aside>
+            <ul>
+                <li>Selecione uma lâmpada para substituição</li>
+                <li>Enquanto a lâmpada não for de mesma potência</li>
+                <ul>
+                    <li>Descarte a lâmpada selecionada</li>
+                    <li>Selecione uma lâmpada nova</li>
+                </ul>
+            </ul>
+        </aside>
+        <p>Usando ideias semelhantes, podemos reescrever o algoritmo assim:</p>
+        <aside>
+            <ol>
+                <li>Posicione a escada debaixo da lâmpada queimada</li>
+                <li>Selecione uma lâmpada para substituição</li>
+                <li>Enquanto a lâmpada não fore de mesma potência</li>
+                <ul>
+                    <li>Descarte a lâmpada selecionada</li>
+                    <li>Selecione uma lâmpada nova</li>
+                </ul>
+                <li>Enquanto a lâmpada não pode ser alcançada</li>
+                <ul>
+                    <li>Suba um degrau da escada</li>
+                </ul>
+                <li>Enquanto a lâmpada estiver livre no bocal</li>
+                <ul>
+                    <li>Gire a lâmpada no sentido anti-horário</li>
+                </ul>
+                <li>Posicione a nova lâmpada no bocal</li>
+                <li>Enquanto a lâmpada não estiver firme no bocal</li>
+                <ul>
+                    <li>Gire a lâmpada no sentido horário</li>
+                </ul>
+                <li>Desça a escada</li>
+            </ol>
+        </aside>
+        <p>O processo de detalhamento deste algoritmo poderia continuar indefinidamente, porém conseguimos ilustrar como um algoritmo pode ser expresso.</p>
+    </main>
+    <footer>
+        <p>&copy; Site desenvolvido por Gustavo Ferreira - 2022</p>
+    </footer>
+</body>
+</html>
